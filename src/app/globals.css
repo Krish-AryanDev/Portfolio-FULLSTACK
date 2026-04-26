@@ -1,26 +1,100 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg-primary: #0d0d0d;
+  --color-bg-card: #141414;
+  --color-bg-card-hover: #1a1a1a;
+  --color-gold: #e6a817;
+  --color-gold-hover: #f5b730;
+  --color-gold-dim: rgba(230, 168, 23, 0.15);
+  --color-text-white: #ffffff;
+  --color-text-gray: #a0a0a0;
+  --color-text-muted: #666666;
+  --color-border: #222222;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e6a817;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(230, 168, 23, 0.3);
+  color: #ffffff;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #0d0d0d;
+  color: #ffffff;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Gold underline animation for section headings */
+.section-title-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #e6a817;
+  border-radius: 2px;
+}
+
+/* Glass card effect */
+.glass-card {
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(34, 34, 34, 0.5);
+}
+
+/* Gold gradient text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #e6a817, #f5b730);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Skill bar animation */
+@keyframes skillFill {
+  from {
+    width: 0%;
+  }
+}
+
+/* Glow effect for buttons */
+.gold-glow {
+  box-shadow: 0 0 20px rgba(230, 168, 23, 0.3);
+}
+
+.gold-glow:hover {
+  box-shadow: 0 0 30px rgba(230, 168, 23, 0.5);
 }
