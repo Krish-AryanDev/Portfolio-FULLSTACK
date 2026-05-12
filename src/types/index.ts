@@ -38,25 +38,6 @@ export interface Service {
   icon: string;
 }
 
-export interface Testimonial {
-  id: number;
-  quote: string;
-  name: string;
-  role: string;
-  company: string;
-  avatar: string;
-}
-
-export interface BlogPost {
-  id: number;
-  title: string;
-  excerpt: string;
-  category: string;
-  image: string;
-  date: string;
-  slug: string;
-}
-
 export interface ContactFormData {
   name: string;
   email: string;

@@ -6,8 +6,6 @@ import Services from "@/components/sections/Services";
 import Skills from "@/components/sections/Skills";
 import Resume from "@/components/sections/Resume";
 import Portfolio from "@/components/sections/Portfolio";
-import Testimonials from "@/components/sections/Testimonials";
-import Blog from "@/components/sections/Blog";
 import Contact from "@/components/sections/Contact";
 
 export default function Home() {
@@ -21,8 +19,6 @@ export default function Home() {
         <Skills />
         <Resume />
         <Portfolio />
-        <Testimonials />
-        <Blog />
         <Contact />
       </main>
       <Footer />

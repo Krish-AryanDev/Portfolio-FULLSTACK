@@ -2,11 +2,10 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Github, Linkedin, Twitter, Dribbble } from "lucide-react";
+import { Github, Linkedin, Dribbble } from "lucide-react";
 
 const socialLinks = [
   { name: "Dribbble", href: "https://dribbble.com", icon: Dribbble },
-  { name: "Twitter", href: "https://twitter.com", icon: Twitter },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/krish-aryan-868890370/",
@@ -125,7 +124,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-bg-primary via-transparent to-transparent z-10 rounded-2xl" />
               <div className="absolute -inset-1 bg-gradient-to-br from-gold/20 via-transparent to-gold/10 rounded-2xl blur-sm" />
               <Image
-                src="/images/hero-portrait.png"
+                src="/images/hero-portrait.jpeg"
                 alt="Krish Aryan - Fullstack Developer"
                 fill
                 className="object-cover rounded-2xl object-top"

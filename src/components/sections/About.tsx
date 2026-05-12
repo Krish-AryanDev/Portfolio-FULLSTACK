@@ -6,8 +6,8 @@ import { Download } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const personalInfo = [
-  { label: "Birthday", value: "Jan 01, 1998" },
-  { label: "Phone", value: "+91 9003135070" },
+  { label: "Birthday", value: "Jul 25, 2006" },
+  { label: "Phone", value: "+91 9031350700" },
   { label: "Email", value: "krisharyan.dev@gmail.com" },
   { label: "Address", value: "India, Remote" },
   { label: "Language", value: "English, Hindi" },
@@ -43,7 +43,7 @@ export default function About() {
             <div className="relative w-72 h-80 sm:w-80 sm:h-96 lg:w-full lg:h-[480px]">
               <div className="absolute -inset-2 bg-gradient-to-br from-gold/20 to-transparent rounded-2xl" />
               <Image
-                src="/images/about-portrait.png"
+                src="/images/about-portrait.jpg"
                 alt="Krish Aryan"
                 fill
                 className="object-cover rounded-2xl"
@@ -82,13 +82,13 @@ export default function About() {
                   initial={{ opacity: 0, y: 15 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.4 + index * 0.08 }}
-                  className="flex gap-2"
+                  className="flex gap-2 min-w-0"
                 >
-                  <span className="text-text-muted font-medium min-w-[90px]">
+                  <span className="text-text-muted font-medium min-w-[90px] shrink-0">
                     {info.label}:
                   </span>
                   <span
-                    className={`${
+                    className={`break-all min-w-0 ${
                       info.label === "Freelance"
                         ? "text-gold font-semibold"
                         : "text-text-white"

@@ -36,19 +36,12 @@ export const metadata: Metadata = {
       "Fullstack Developer specializing in React, Next.js, Node.js, Go, and React Native. Available for freelance work.",
     images: [
       {
-        url: "/images/hero-portrait.png",
+        url: "/images/hero-portrait.jpeg",
         width: 1200,
         height: 630,
         alt: "Krish Aryan - Fullstack Developer",
       },
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Krish Aryan | Fullstack Developer",
-    description:
-      "Fullstack Developer specializing in React, Next.js, Node.js, Go, and React Native.",
-    images: ["/images/hero-portrait.png"],
   },
   robots: {
     index: true,

@@ -10,7 +10,6 @@ const navLinks = [
   { name: "About", href: "#about" },
   { name: "Resume", href: "#resume" },
   { name: "Portfolio", href: "#portfolio" },
-  { name: "Blog", href: "#blog" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -100,10 +99,10 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center gap-2 text-text-gray">
               <Phone size={14} className="text-gold" />
               <a
-                href="tel:+919003135070"
+                href="tel:+919031350700"
                 className="text-sm hover:text-gold transition-colors duration-300"
               >
-                +91 9003135070
+                +91 9031350700
               </a>
             </div>
 
@@ -149,8 +148,8 @@ export default function Navbar() {
               ))}
               <div className="flex items-center gap-2 text-text-gray mt-6 px-4">
                 <Phone size={14} className="text-gold" />
-                <a href="tel:+919003135070" className="text-sm">
-                  +91 9003135070
+                <a href="tel:+919031350700" className="text-sm">
+                  +91 9031350700
                 </a>
               </div>
             </div>

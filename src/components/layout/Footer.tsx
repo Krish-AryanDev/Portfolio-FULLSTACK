@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, ArrowUp, Heart } from "lucide-react";
+import { Github, Linkedin, ArrowUp, Heart } from "lucide-react";
 
 const socialLinks = [
   {
@@ -13,11 +13,6 @@ const socialLinks = [
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/krish-aryan-868890370/",
     icon: Linkedin,
-  },
-  {
-    name: "Twitter",
-    href: "https://twitter.com",
-    icon: Twitter,
   },
 ];
 

@@ -20,8 +20,6 @@ export function useScrollProgress() {
         "skills",
         "resume",
         "portfolio",
-        "testimonials",
-        "blog",
         "contact",
       ];
 

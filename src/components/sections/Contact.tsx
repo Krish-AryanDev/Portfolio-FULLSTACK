@@ -10,7 +10,6 @@ import {
   CheckCircle,
   Github,
   Linkedin,
-  Twitter,
   Loader2,
 } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
@@ -74,7 +73,7 @@ export default function Contact() {
       label: "Address",
       value: "India (Available Remote Worldwide)",
     },
-    { icon: Phone, label: "Phone", value: "+91 9003135070" },
+    { icon: Phone, label: "Phone", value: "+91 9031350700" },
     { icon: Mail, label: "Email", value: "krisharyan.dev@gmail.com" },
   ];
 
@@ -206,7 +205,7 @@ export default function Contact() {
                   transition={{ delay: 0.4 + index * 0.1 }}
                   className="flex items-start gap-4"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-gold-dim flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-gold-dim flex items-center justify-center shrink-0">
                     <info.icon size={20} className="text-gold" />
                   </div>
                   <div>
@@ -248,11 +247,6 @@ export default function Contact() {
                     Icon: Linkedin,
                     href: "https://www.linkedin.com/in/krish-aryan-868890370/",
                     label: "LinkedIn",
-                  },
-                  {
-                    Icon: Twitter,
-                    href: "https://twitter.com",
-                    label: "Twitter",
                   },
                 ].map((social) => (
                   <motion.a

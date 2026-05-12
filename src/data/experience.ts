@@ -3,56 +3,57 @@ import { Experience, Education } from "@/types";
 export const experiences: Experience[] = [
   {
     id: 1,
-    title: "Senior Fullstack Developer",
-    dateRange: "Jan 2023 – Present",
-    company: "TechCorp Solutions",
+    title: "Founder & Full Stack Developer",
+    dateRange: "2025 – Present",
+    company: "WarmStay",
     location: "Remote",
     description:
-      "Led the development of a microservices platform serving 200K+ users. Architected scalable APIs with Go and Node.js, implemented CI/CD pipelines, and mentored a team of 5 developers.",
+      "Building WarmStay.in — a hostel booking platform from the ground up. Handling everything from product design to development and deployment using Next.js, Supabase, and Tailwind CSS.",
   },
   {
     id: 2,
-    title: "Fullstack Developer",
-    dateRange: "Jun 2021 – Dec 2022",
-    company: "StartupXYZ",
-    location: "Hybrid",
+    title: "Freelance Web Developer",
+    dateRange: "2025",
+    company: "Shehnai Resort",
+    location: "Freelance",
     description:
-      "Built a SaaS product from scratch using MERN stack. Designed database schemas, implemented real-time features with WebSockets, and integrated third-party payment gateways.",
+      "Designed and developed the official website for Shehnai Resort (shehnairesort.in), a live hospitality business. Built with React, Next.js, and Tailwind CSS to showcase their venue, restaurant, and hotel.",
   },
   {
     id: 3,
-    title: "Frontend Developer",
-    dateRange: "Jan 2020 – May 2021",
-    company: "Digital Agency Co.",
-    location: "On-site",
+    title: "Finalist – Snatch 2.0 DSA Hackathon",
+    dateRange: "2025",
+    company: "IEEE",
+    location: "MUJ",
     description:
-      "Developed 15+ responsive web applications with React.js. Achieved Lighthouse scores of 95+ consistently. Collaborated with designers to implement pixel-perfect UIs.",
+      "Competed in Snatch 2.0, a competitive Data Structures & Algorithms contest organized by IEEE. Reached the finals against participants from across the university.",
+  },
+  {
+    id: 4,
+    title: "Hackathon Participant – The Fest 3.0",
+    dateRange: "2025",
+    company: "Randomize",
+    location: "MUJ",
+    description:
+      "Built Athena AI, an educational learning platform, during The Fest 3.0 hackathon organized by Randomize. Designed and developed the full product within the hackathon timeline.",
   },
 ];
 
 export const education: Education[] = [
   {
     id: 1,
-    degree: "B.Tech Computer Science",
-    dateRange: "2016 – 2020",
-    institution: "XYZ University",
+    degree: "B.Tech Computer Science Engineering",
+    dateRange: "2025 – 2029",
+    institution: "Manipal University Jaipur",
     description:
-      "Graduated with honors. Focused on algorithms, data structures, and software engineering. Led the university's coding club and participated in national hackathons.",
+      "Currently pursuing B.Tech in CSE. Completed my first year with a strong foundation in programming, data structures, and computer science fundamentals.",
   },
   {
     id: 2,
-    degree: "Full Stack Bootcamp",
-    dateRange: "2020 – 2021",
-    institution: "Online Certification",
+    degree: "Full Stack Web Development Bootcamp",
+    dateRange: "2025 – 2026",
+    institution: "100xDevs",
     description:
-      "Intensive full-stack development program covering MERN stack, DevOps fundamentals, system design patterns, and agile project management methodologies.",
-  },
-  {
-    id: 3,
-    degree: "Cloud Architecture",
-    dateRange: "2022",
-    institution: "AWS Certified",
-    description:
-      "AWS Solutions Architect certification. Mastered cloud infrastructure, serverless computing, containerization with Docker/Kubernetes, and cost optimization strategies.",
+      "Intensive bootcamp covering the complete full stack — React, Next.js, Node.js, databases, and deployment. Built real-world projects from scratch.",
   },
 ];
