@@ -22,7 +22,7 @@ export async function sendContactEmail(data: EmailData) {
 
   const mailOptions = {
     from: `"Portfolio Contact" <${process.env.SMTP_USER}>`,
-    to: process.env.CONTACT_EMAIL || "krisharyan.dev@gmail.com",
+    to: process.env.CONTACT_EMAIL || "portfolio-fullstack-lovat.vercel.app@gmail.com",
     replyTo: email,
     subject: `Portfolio Contact: ${subject}`,
     html: `
@@ -38,7 +38,7 @@ export async function sendContactEmail(data: EmailData) {
           <p>${message.replace(/\n/g, "<br>")}</p>
         </div>
         <p style="color: #999; font-size: 12px; margin-top: 20px;">
-          Sent from krisharyan.dev portfolio contact form
+          Sent from portfolio-fullstack-lovat.vercel.app portfolio contact form
         </p>
       </div>
     `,

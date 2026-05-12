@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://krisharyan.dev"),
+  metadataBase: new URL("https://portfolio-fullstack-lovat.vercel.app"),
   title: "Krish Aryan | Fullstack Developer — Portfolio",
   description:
     "Krish Aryan is a Fullstack Developer specializing in React, Next.js, Node.js, Go, and React Native. Building scalable web and mobile applications with modern technologies.",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://krisharyan.dev",
+    url: "https://portfolio-fullstack-lovat.vercel.app",
     siteName: "Krish Aryan Portfolio",
     title: "Krish Aryan | Fullstack Developer",
     description:

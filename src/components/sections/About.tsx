@@ -8,7 +8,7 @@ import { useInView } from "@/hooks/useInView";
 const personalInfo = [
   { label: "Birthday", value: "Jul 25, 2006" },
   { label: "Phone", value: "+91 9031350700" },
-  { label: "Email", value: "krisharyan.dev@gmail.com" },
+  { label: "Email", value: "portfolio-fullstack-lovat.vercel.app@gmail.com" },
   { label: "Address", value: "India, Remote" },
   { label: "Language", value: "English, Hindi" },
   { label: "Freelance", value: "Available" },
@@ -101,14 +101,16 @@ export default function About() {
             </div>
 
             {/* Download CV Button */}
-            <motion.button
+            <motion.a
+              href="/resume"
+              target="_blank"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-2 px-7 py-3 bg-gold text-bg-primary font-semibold rounded-full hover:bg-gold-hover transition-colors duration-300 gold-glow"
             >
               <Download size={18} />
               Download CV
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </div>
