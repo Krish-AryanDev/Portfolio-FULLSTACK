@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Github, Linkedin, Dribbble } from "lucide-react";
 
 const socialLinks = [
@@ -30,9 +29,9 @@ export default function Hero() {
       <div className="absolute bottom-1/4 left-1/4 w-72 h-72 bg-gold/3 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col items-center justify-center">
           {/* Left Content */}
-          <div className="order-2 lg:order-1 text-center lg:text-left">
+          <div className="text-center">
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -91,7 +90,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.0 }}
-              className="flex items-center gap-4 mt-10 justify-center lg:justify-start"
+              className="flex items-center gap-4 mt-10 justify-center"
             >
               {socialLinks.map((social, index) => (
                 <motion.a
@@ -112,27 +111,6 @@ export default function Hero() {
               ))}
             </motion.div>
           </div>
-
-          {/* Right - Portrait */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="order-1 lg:order-2 flex justify-center lg:justify-end"
-          >
-            <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-[420px] lg:h-[500px]">
-              <div className="absolute inset-0 bg-gradient-to-t from-bg-primary via-transparent to-transparent z-10 rounded-2xl" />
-              <div className="absolute -inset-1 bg-gradient-to-br from-gold/20 via-transparent to-gold/10 rounded-2xl blur-sm" />
-              <Image
-                src="/images/hero-portrait.jpeg"
-                alt="Krish Aryan - Fullstack Developer"
-                fill
-                className="object-cover rounded-2xl object-top"
-                priority
-                sizes="(max-width: 768px) 320px, 420px"
-              />
-            </div>
-          </motion.div>
         </div>
       </div>
 
